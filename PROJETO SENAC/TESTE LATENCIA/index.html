@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="apis.js"></script>
+    <title>Teste de Performance de APIs</title>
+     
+</head>
+<body>
+    <div class="container">
+        <h1>Teste de Performance de APIs</h1>
+        <form onsubmit="testarAPI(); return false;">
+            <label for="url">URL da API:</label>
+            <input type="text" id="url" name="url" required><br>
+            <label for="qtd-requisicoes">Quantidade de Requisições:</label>
+            <input type="number" id="qtd-requisicoes" name="qtd-requisicoes" min="1" required><br>
+            <button type="submit">Testar API</button>
+        </form>
+        <div id="resultados"></div>
+        <div id="tempo">
+            <p id="tempo-total">Tempo Total de Resposta para 100 requisições: </p>
+            <p id="tempo-medio">Tempo Médio de Resposta: </p>
+        </div>
+    </div>
+</body>
+</html>
